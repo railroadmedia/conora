@@ -27,7 +27,7 @@ class CommentCreateRequest extends FormRequest
     public function rules()
     {
         return [
-            'comment' => 'required|max:1024',
+            'comment' => 'required|max:10024',
             'content_id' =>
                 ['required',
                     'numeric',

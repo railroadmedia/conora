@@ -27,7 +27,7 @@ class CommentUpdateRequest extends FormRequest
     public function rules()
     {
         return [
-            'comment' => 'nullable|max:1024',
+            'comment' => 'nullable|max:10024',
             'content_id' =>
                 ['numeric',
                     Rule::exists(
