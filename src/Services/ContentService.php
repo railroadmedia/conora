@@ -926,6 +926,8 @@ class ContentService
         $parentId = null,
         $sort = 0
     ) {
+        $slug = ContentHelper::slugify($slug);
+
         $id = $this->contentRepository->create(
             [
                 'slug' => $slug,
